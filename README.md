@@ -17,7 +17,7 @@ Esse é um aplicativo web simples de quiz desenvolvido com HTML, Tailwind e Java
 
 Para executar o aplicativo, basta abrir o arquivo `index.html` em um navegador da web compatível.
 
-[Ou clique no aqui e será direcionado ao site ativo]()
+[Ou clique no aqui e será direcionado ao site ativo](https://quiz-app-dev-tatyane.netlify.app/)
 
 ## Personalização
 
