@@ -1,7 +1,7 @@
 <h1 align="center"> Quiz</h1>
 <img align="center" src="/img/preview.png">
 
-Esse é um aplicativo web simples de quiz desenvolvido com HTML, CSS e JavaScript.
+Esse é um aplicativo web simples de quiz desenvolvido com HTML, Tailwind e JavaScript.
 
 ## Funcionalidades 
 
