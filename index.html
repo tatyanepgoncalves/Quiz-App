@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/output.css">
+    <title>Quiz App</title>
+    <style>
+        @media (max-width: 396px) {
+            #trilho.dark #indicador {left: 20px}
+        }
+        #indicador{transition: .5s;}
+        #trilho.dark #indicador {left: 50px;background-color: #fff;}
+        body.dark {background-color: #000;}
+        body.dark header h1{color: #fff;}
+        body.dark #result-container div h2 {color: #fff;}
+        body.dark #result-container div p {color: #fff;}
+        body.dark footer p{color: #fff;}
+        #options button{ padding: 1rem; background-color: #41ead4; border-radius: 6px; font-weight: 500; letter-spacing: 2px; cursor: pointer; transition: .5s;}
+        #options button:hover{background-color: #fbff12;box-shadow: 0 0 10px #fbff12;}
+    </style>
+</head>
+<body class="h-full flex justify-center mt-8">
+
+
+    <div id="quiz" class="w-full h-[600px] mx-12">
+        <header class="flex items-center justify-between mb-10">
+            <h1 class="text-5xl font-bold tracking-wider">Quiz App</h1>
+            <div id="trilho" class="w-[100px] h-[50px] bg-[#e5e5e5] rounded-3xl relative  cursor-pointer">
+                <div id="indicador" class="bg-black h-[50px] w-[50px] rounded-full scale-90 left-0 absolute"></div>
+            </div>
+        </header>
+        
+        <div id="quiz-container" class=" shadow-lg rounded-md" style="border: 5px solid #41ead4;">
+            <div id="top">
+                <div id="question" class="font-bold lg:text-3xl p-5" style="background-color: #41ead4;"></div>
+            </div>
+
+            <div id="bottom" class="p-3">
+                <div id="options" class="flex flex-col gap-4"></div>
+            </div>
+
+        </div>
+
+        <div id="result-container" class="text-center hidden">
+            <div class="m-auto inline-block">
+                <h2 class="text-5xl font-bold">Seu resultado</h2>
+                <p id="result" class="text-base"></p>
+                <button id="restart" class="bg-[#41ead4] shadow-lg rounded-lg uppercase text-center w-[200px]  h-[50px] font-bold duration-1000 hover:bg-[#fbff12]">Reiniciar</button>
+            </div>
+        </div>
+
+        <footer id="footer" class="mt-4">
+            <p class="text-center">&copy; 2024 Tatyane Gonçalves. Todos os direitos reservados.</p>
+        </footer>
+
+    </div>
+
+    <script src="js/quiz.js"></script>
+
+</body>
+</html>
